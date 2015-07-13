@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <TextView
+        android:hint="正确输入身高： 单位（米）"
+        android:textColor="#ff000000"
+        android:textSize="20dp"
+        android:paddingTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/height" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="正确输入体重：单位（千克）"
+        android:textColor="#ff000000"
+        android:textSize="20dp"
+        android:paddingTop="20dp"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weight"
+        android:inputType="number"
+        android:layout_marginBottom="50dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI计算"
+        android:textColor="#ff000000"
+        android:id="@+id/BMIbutton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show"
+        android:textColor="#fff0000b"
+        android:textSize="20dp"
+        />
+
+</LinearLayout>
