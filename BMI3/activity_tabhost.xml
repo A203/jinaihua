@@ -1,0 +1,121 @@
+<TabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@android:id/tabhost"
+    android:background="@mipmap/bg">
+
+    <TextView
+        android:text="BMI体重指数计算器"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ff000000"
+        android:textSize="30dp"
+        android:paddingTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TabWidget
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@android:id/tabs"
+            android:paddingTop="60dp">
+        </TabWidget>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@android:id/tabcontent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="50dp"
+                android:text="BMI指数（即身体质量指数，简称体质指数又称体重，英文为Body Mass Index，简称BMI），是用体重公斤数除以身高米数平方得出的数字，是目前国际上常用的衡量人体胖瘦程度以及是否健康的一个标准。主要用于统计用途，当我们需要比较及分析一个人的体重对于不同高度的人所带来的健康影响时，BMI值是一个中立而可靠的指标。"
+                android:textSize="20sp"
+                android:textColor="#ff0a0a77"
+                android:id="@+id/aboutBMI"
+                >
+            </TextView>
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="s2"
+                android:textColor="#ff0a0a77"
+                android:id="@+id/BMI测试"
+                >
+            </TextView>-->
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                tools:context="MainActivity"
+                android:id="@+id/testBMI">
+
+                <TextView
+                    android:hint="正确输入身高： 单位（米）"
+                    android:textColor="#ff000000"
+                    android:textSize="20dp"
+                    android:paddingTop="20dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/height" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="正确输入体重：单位（千克）"
+                    android:textColor="#ff000000"
+                    android:textSize="20dp"
+                    android:paddingTop="20dp"
+                    />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weight"
+                    android:inputType="number"
+                    android:layout_marginBottom="50dp"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BMI计算"
+                    android:textColor="#ff000000"
+                    android:id="@+id/BMIbutton"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:text="结果："
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/show"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="20sp"
+                    android:textColor="#fff0000b"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>
